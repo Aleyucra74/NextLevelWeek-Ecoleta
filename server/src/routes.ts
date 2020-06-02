@@ -1,9 +1,26 @@
 import express from 'express';
+import knex from './database/connection';
+
+import PointsController from './controllers/PointsControllers';
+import ItemsController from './controllers/ItemsControllers';
 
 const routes = express.Router();
+const pointsController = new PointsController();
+const itemsController = new ItemsController();
 
-routes.get('/user', (request, response) => {
-    return response.json({ message: 'ola'});
-});
+//lista os items
+routes.get('/items', itemsController.index);
 
-export default routes;
+
+
+//cria um ponto de coleta
+routes.post('/points',pointsController.create);
+
+//lista um ponto de coleta por filtro
+routes.get('/points',pointsController.index);
+
+//lista um ponto de coleta por id
+routes.get('/points/:id',pointsController.show);
+
+
+export default routes; 
