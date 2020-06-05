@@ -63,21 +63,21 @@ const Points = () => {
     useEffect(() => {
       api.get('points', {
         params: {
-          city: 'SP',
-          uf: 'Sp',
-          items: [2,6]
+          city: 'São Paulo',
+          uf: 'SP',
+          items: [2, 6]
         }
       }).then(response => {
-        setPoints(response.data)
+        setPoints(response.data);
       })
-    },[]);
+    }, []);
 
     function handleNavigationBack() {
         navigation.goBack();
     }
 
-    function handleNavigationToDetail() {
-        navigation.navigate('Detail');
+    function handleNavigationToDetail(id: number) {
+        navigation.navigate('Detail', {point_id: id});
     }
 
     function handleSelectItem(id: number) {
@@ -116,7 +116,7 @@ const Points = () => {
                         <Marker 
                             key={String(point.id)}
                             style={styles.mapMarker}
-                            onPress={handleNavigationToDetail}
+                            onPress={() => handleNavigationToDetail(point.id)}
                             coordinate={{
                                 latitude: point.latitude,
                                 longitude: point.longitude,

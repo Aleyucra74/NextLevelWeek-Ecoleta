@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-location@~8.1.0
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-mail-composer@~8.1.0
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\LEY\bin;C:\Python27;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Brackets\command;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\LEY\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\LEY\AppData\Local\Programs\Python\Python38;C:\Users\LEY\AppData\Local\Microsoft\WindowsApps;C:\Users\LEY\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LEY\AppData\Roaming\Composer\vendor\bin;C:\Users\LEY\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\LEY\AppData\Local\Programs\Python;C:\Users\LEY\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\LEY\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\LEY\AppData\Local\Programs\Python\Python38;C:\Users\LEY\AppData\Local\Microsoft\WindowsApps;C:\Users\LEY\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LEY\AppData\Roaming\Composer\vendor\bin;C:\Users\LEY\AppData\Roaming\npm;C:\Users\LEY\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\LEY\AppData\Local\Yarn\bin;C:\android\Sdk\emulator;C:\android\Sdk\tools;C:\android\Sdk\tools\bin;C:\android\Sdk\platform-tools;C:\Program Files\MySQL\MySQL Server 8.0\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\LEY\Documents\Rocketseat-NextLevelWeek\mobile\node_modules\@babel\compat-data\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\LEY\Documents\Rocketseat-NextLevelWeek\mobile\node_modules\@babel\generator\node_modules\.bin'
 
 npm manifest: 
   {
