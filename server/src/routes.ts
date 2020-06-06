@@ -1,10 +1,15 @@
 import express from 'express';
 import knex from './database/connection';
 
+import multer from 'multer';
+import multerConfig from './config/multer';
+
 import PointsController from './controllers/PointsControllers';
 import ItemsController from './controllers/ItemsControllers';
 
 const routes = express.Router();
+const upload = multer(multerConfig);
+
 const pointsController = new PointsController();
 const itemsController = new ItemsController();
 
@@ -14,7 +19,7 @@ routes.get('/items', itemsController.index);
 
 
 //cria um ponto de coleta
-routes.post('/points',pointsController.create);
+routes.post('/points', upload.single('image') ,pointsController.create);
 
 //lista um ponto de coleta por filtro
 routes.get('/points',pointsController.index);
